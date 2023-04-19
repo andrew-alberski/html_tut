@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* You can also create custom styles */
+
+@font-face {
+    font-family: 'Livvic';
+    src: url(../fonts/livvic/Livvic-ExtraLight.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url(../fonts/livvic/Livvic-Thin.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url(../fonts/livvic/Livvic-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url(../fonts/livvic/Livvic-Italic.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url(../fonts/livvic/Livvic-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+/* You can extract repeated patterns from tailwind components
+to create your own custom CSS classes */
+
+@layer components {
+    mb-button {
+        @apply py-1 px-2 rounded-md bg-cyan-800 text-slate-50 hover:bg-cyan-500;
+    }
+}
+
+/* Or, if you must, you can add custom CSS styles.
+This does the same thing as the code above. */
+
+.music-binder-button {
+    padding: .25rem 0.5rem;
+    border-radius: 0.375rem;
+    background-color: rgb(21 94 117 / 1);
+    color: rgb(248 250 252 / 1);
+}
+
+.music-binder-button:hover {
+    background-color: rgb(6 182 212 / 1);
+    cursor: pointer;
+}
+
